@@ -10,4 +10,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GameFinder.Services\GameFinder.Services.csproj" />
+    <ProjectReference Include="..\GameFinder.Models\GameFinder.Models.csproj" />
+    <ProjectReference Include="..\GameFinder.Data\GameFinder.Data.csproj" />
+  </ItemGroup>
+
 </Project>
