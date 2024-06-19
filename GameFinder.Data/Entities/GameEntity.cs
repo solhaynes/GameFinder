@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GameFinder.Data.Entities;
 
@@ -11,9 +12,12 @@ public class GameEntity
   public string Name { get; set; } = string.Empty;
 
   [Required]
+  [ForeignKey(nameof(GameSystemEntity))]
   public int GameSystemId { get; set; }
+  public GameSystemEntity GameSystem  { get; set; } = null!;
 
   [Required]
+  [ForeignKey(nameof(GenreEntity))]
   public int GenreId { get; set; }
-
+  public GenreEntity Genre { get; set; } = null!;
 }
