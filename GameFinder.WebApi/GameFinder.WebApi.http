@@ -1,0 +1,6 @@
+@GameFinder.WebApi_HostAddress = http://localhost:5111
+
+GET {{GameFinder.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
