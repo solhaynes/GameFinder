@@ -10,13 +10,4 @@ public class ApplicationDbContext : DbContext
 
   public DbSet<GenreEntity> Genres { get; set; } = null!;
   public DbSet<GameEntity> Games { get; set; } = null!;
-  public DbSet<GameSystemEntity> GameSystems { get; set; } = null!;
-
-
-    // protected override void OnModelCreating(ModelBuilder modelBuilder)
-    // {
-    //     base.OnModelCreating(modelBuilder);
-
-    //     modelBuilder.Entity<GenreEntity>().ToTable("Genres");
-    // }
-}
+  public DbSet<
